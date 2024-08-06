@@ -2,7 +2,7 @@
 
 This project sets up a simple `Node.js` server using `GraphQL` with `Apollo Server` and `TypeScript` . The main goal is to demonstrate how to define type definitions (typeDefs) and resolvers in a GraphQL API. The project uses the Fakestore API to fetch datas.
 
-To uinstall this project:
+To install this project:
     - git clone `<repository-url>`
     - cd `<repository-directory>`
     - npm install
