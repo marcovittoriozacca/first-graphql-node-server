@@ -29,7 +29,7 @@ const typeDefs = `#graphql
 
     type Query {
         users: [User!]
-        user(id: Int!): User
+        user(id: ID!): User
     }
 `;
 module.exports = typeDefs;

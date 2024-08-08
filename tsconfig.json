@@ -9,5 +9,5 @@
     "esModuleInterop": true,
     "types": ["node"]
   },
-  "include": ["src/**/*.ts"] // Assicurati di includere la tua directory sorgente
+  "include": ["src/**/*.ts"]
 }
