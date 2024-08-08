@@ -27,9 +27,42 @@ const typeDefs = `#graphql
         long: String
     }
 
+    #fake data...
+    type Movie {
+        id: ID!
+        title: String!
+        description: String
+        release_date: String!
+        langs: [String!]
+    }
+
+    input CreateMovieInput{
+        title: String!
+        description: String
+        release_date: String!
+        langs: [String!]
+    }
+    input UpdateMovieInput{
+        title: String
+        description: String
+        release_date: String
+        langs: [String]
+    }
+
     type Query {
         users: [User!]
         user(id: ID!): User
+
+        movies: [Movie!]
+        movie(id: ID!): Movie
     }
+    type Mutation {
+        createMovie(movie: CreateMovieInput!): Movie
+        updateMovie(id: ID!, movie: UpdateMovieInput!): Movie
+    }
+
+
+
+
 `;
 module.exports = typeDefs;
